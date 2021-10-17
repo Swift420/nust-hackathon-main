@@ -1,0 +1,9 @@
+Landing Page (Pending)
+Login Form (Done)
+Sign-up Form (Done)
+Academic staff access point (Done)
+teaching workload (Done)
+research workload (Done)
+administrative workload (Done)
+community engagement workload (Done)
+Separate stylesheets and scripts from HTML 

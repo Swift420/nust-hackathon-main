@@ -1,0 +1,47 @@
+﻿@page
+<link rel="stylesheet" href="~/css/community-workload.css" />
+<script src="~/js/community-engagement.js"></script>
+@model schoolAdmin.Pages.Loads.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+    int i = 0;
+}
+
+
+    <h1>Create</h1>
+
+    <h4 class="text-center">Workloads</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-4">
+            <form method="post">
+
+
+                <div class="wrapper text-center">
+                    <header class="text-lg-center">WorkLoad</header>
+                    <div class="form-group">
+                        <input asp-for="Workloads.Description" placeholder="Add Text" class="form-control" />
+                        <input type="submit" value="Create" class="btn btn-primary" />
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    </div>
+                    <div class="footer">
+                        <span>You have @i pending tasks</span>
+
+                    </div>
+
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <a asp-page="Index">Back to List</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
